@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Combiner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="icon" type="image/jpeg" href="/images/favicon.jpg">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Combiner</h1>
+        <form id="uploadForm">
+            <label for="image1">Upload Image 1 (Max: 2MB):</label>
+            <input type="file" id="image1" accept="image/png, image/jpeg" required>
+            <label for="image2">Upload Image 2 (Max: 2MB):</label>
+            <input type="file" id="image2" accept="image/png, image/jpeg" required>
+            <button type="submit">Combine Images</button>
+        </form>
+        <div id="result">
+            <h3>Uploaded Images:</h3>
+            <img id="imagePreview1" alt="Image 1" />
+            <img id="imagePreview2" alt="Image 2" />
+            <h3>Combined Image:</h3>
+            <img id="combinedImage" alt="Combined Result" />
+            <a id="downloadLink" href="#" download>Download Combined Image</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
